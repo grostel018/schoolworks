@@ -1,0 +1,133 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int rollin2dice ( int a , int b)
+{
+     a = rand () % 6 + 1 ;
+
+     b = rand () % 6 + 1 ;
+
+    int c = a + b;
+
+
+    return c;
+
+}
+
+int main()
+{
+    printf ( " hello player \n let's start \n\n");
+
+    printf ( " Do you wanna play ? 1 for yes and 2 for no \n\n ");
+
+    int r ;
+
+    scanf ("%d", &r);
+
+    while ( r != 1 )
+    {
+        printf (" Pfffff \n\n");
+
+        return 0;
+    }
+
+    printf("Rolling two dice ... \n\n");
+
+
+
+    int i = 0;
+
+    int point = 0;
+
+    srand ( time (NULL));
+
+
+    int a = rand ( ) % 6 + 1 ;
+
+    int b = rand ( ) %6 + 1 ;
+
+    int c = a + b;
+
+    printf (" You got %d \n\n", c);
+
+    if ( c == 7 || c == 11)
+    {
+        printf ( " ---- CONGRATS YOU WON ---- \n");
+
+        return 0;
+        }
+    else if ( c == 2 || c == 3 || c == 12)
+
+        {printf ( " ---- PATHETIC , You LOST ---- \n");
+
+        return 0;
+        }
+
+    else {
+        point = c ;
+
+        printf ("So you currently have %d points \n", point);
+    }
+
+
+
+   for ( int i = 0; i < point ; i ++)
+   {
+       c = rollin2dice (a , b) ;
+
+       int r = 0;
+
+       printf (" Still wanna play , loser ? \n type 1 for yes and 2 for no \n" );
+
+       scanf ( "%d", &r);
+
+       if ( r == 1) {
+
+
+       printf ( " rolling dices \n");
+
+       printf (" You got %d \n\n", c);
+
+
+       if ( c == 7)
+       {
+           printf ( "you won... finally  after  %d attemps \n", i);
+           return 0 ;
+
+       }
+       else {
+
+            printf ( " ahahah, you got %d in the dice  \n", c);
+
+
+            }
+
+
+
+
+
+             }
+             else { printf ( " YOU are really a loser for giving up like a pussy \n");
+
+             return 0;
+
+             }
+   }
+
+
+
+    printf(" So you didn't won ? even after all those attemps ?  Life is hard ngl\n\n");
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
