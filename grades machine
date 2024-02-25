@@ -38,9 +38,9 @@ int calculate (float studnumb, float passgrade)
     {
         if ( tab [i] <= passgrade )
         {
-            suc ++;
+            fail ++;
         }
-        else { fail ++;}
+        else { suc ++;}
 
     }
 
