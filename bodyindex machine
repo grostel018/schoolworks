@@ -12,19 +12,19 @@ int bodyindex ( float height, float weight )
     int a = 0;
 
 
-    if ( c >= 0 && c <= 18)
+    if ( c >= 0 && c < 19)
     {
         printf ( " Skinny \n\n");
         a = 1;
     }
 
-    else if ( c >= 19 && c <= 25 )
+    else if ( c >= 19 && c < 26 )
     {
         printf (" Normal \n\n");
         a = 2;
     }
 
-    else if ( c >= 26 && c <= 30 )
+    else if ( c >= 26 && c < 31 )
     {
         printf (" lil bit big \n\n");
         a = 3;
@@ -34,6 +34,7 @@ int bodyindex ( float height, float weight )
         printf (" Obese \n\n");
         a = 4;
     }
+    else { printf (" you're a deaf i guess \n\n");}
 
 return a;
 
@@ -83,7 +84,7 @@ int main()
         printf (" Hell yeah big fella \n\n");
     }
     else if ( h <= 1.60)
-        printf (" haha you should be exposed in a circus lil boy \n\n");
+        printf (" haha you should be exposed in a circus lil nigga \n\n");
 
 
     bodyindex ( h, w);
