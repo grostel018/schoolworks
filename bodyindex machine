@@ -83,7 +83,7 @@ int main()
         printf (" Hell yeah big fella \n\n");
     }
     else if ( h <= 1.60)
-        printf (" haha you should be exposed in a circus lil nigga \n\n");
+        printf (" haha you should be exposed in a circus lil boy \n\n");
 
 
     bodyindex ( h, w);
