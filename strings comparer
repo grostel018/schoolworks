@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+
+
+
+int main()
+{
+    printf ("Enter the first string : \n");
+
+    int *str1, *str2;
+
+    int size1 = 0;
+    int size2 = 0;
+    int long1 = 0;
+    int long2 = 0;
+
+    str1 = (void*) malloc ( 100*sizeof (int));
+    str2 = (void*) malloc ( 100*sizeof (int));
+
+    scanf("%s", str1);
+
+    printf ("Enter the second string : \n");
+
+
+    scanf("%s", str2);
+
+
+    size1 = strlen (str1 );
+
+    size2 = strlen (str2);
+
+    if ( size1 == size2)
+        printf (" ---- They have the same size ---- \n");
+
+    else if ( size1 > size2)
+
+        printf (" ---- The first string is longer ---- \n");
+    else
+        printf  ("---- The second string is longer ---- \n");
+
+    free (str1);
+    free (str2);
+
+
+
+
+    return 0;
+}
