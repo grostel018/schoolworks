@@ -1,0 +1,141 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+struct patient {
+
+int number;
+char name[100];
+char surname[100];
+char email [100];
+struct patient *next;
+
+};
+
+typedef struct patient node;
+
+node *head, *link;
+
+/*int n, k;
+
+n = 5;
+
+for (k = 0; k < n; k++)
+    {
+
+if (k == 0)  {
+
+  {
+    head = malloc (sizeof (node));
+
+    link = head ;
+  }
+
+  else {
+        link->next = malloc (sizeof(node));
+        link = link->next;
+       }
+
+ printf ("Enter %d. patient number : ", k+1);
+ scanf ("%d", &link->number);
+ printf ("Enter %d. patient name : ", k+1);
+ scanf ("%s", &link->name);
+ printf ("Enter %d. patient surname : ", k+1);
+ scanf ("%s", &link->surname);
+ printf ("Enter %d. patient email : ", k+1);
+ scanf ("%s", &link->email);
+}
+
+link->next = NULL;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main ()
+{
+    int n, k;
+
+n = 5;
+
+for (k = 0; k < n; k++)
+    {
+
+if (k == 0)
+
+  {
+    head = malloc (sizeof (node));
+
+    link = head ;
+  }
+
+  else {
+        link->next = malloc (sizeof(node));
+        link = link->next;
+       }
+
+ printf ("Enter %d. patient number : ", k+1);
+ scanf ("%d", &link->number);
+ printf ("Enter %d. patient name : ", k+1);
+ scanf ("%s", &link->name);
+ printf ("Enter %d. patient surname : ", k+1);
+ scanf ("%s", &link->surname);
+ printf ("Enter %d. patient email : ", k+1);
+ scanf ("%s", &link->email);
+}
+
+link->next = NULL;
+
+
+
+
+
+
+
+
+
+
+link = head;
+
+while ( link != NULL)
+{
+
+    printf (" patient number %d  infos : \n ", link->number);
+
+    printf ("name = %s\n", link->name);
+
+    printf ("surname = %s\n", link->surname);
+
+    printf ("email = %s\n", link->email);
+
+    link = link->next;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
